@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td> <input type="checkbox" id="1" onclick="Cheap()"> Fast</td>
+    </tr>
+    <tr>
+        <td> <input type="checkbox" id="2" onclick="Good()"> Good</td>
+    </tr>
+    <tr>
+        <td> <input type="checkbox" id="3" onclick="Fast()"> Cheap</td>
+    </tr>
+</table>
+<script>
+
+    function Fast(){
+        // let fast = document.getElementById("1").checked;
+        // let good = document.getElementById("2").checked;
+        // let cheap = document.getElementById("3").checked;
+        if (document.getElementById("1").checked === true && document.getElementById("2").checked === true) {
+            document.getElementById("1").checked = false;}
+    }
+    function Good(){
+        // let fast = document.getElementById("1").checked;
+        // let good = document.getElementById("2").checked;
+        // let cheap = document.getElementById("3").checked;
+        if (document.getElementById("1").checked === true && document.getElementById("3").checked === true) {
+            document.getElementById("3").checked = false;}
+    }
+    function Cheap(){
+        // let fast = document.getElementById("1").checked;
+        // let good = document.getElementById("2").checked;
+        // let cheap = document.getElementById("3").checked;
+        if ( document.getElementById("2").checked=== true && document.getElementById("3").checked === true) {
+            document.getElementById("2").checked =false;}
+    }
+
+
+</script>
+</body>
+</html>
