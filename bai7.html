@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("he so cua x^2 la");
+    let b = +prompt("he so cua x la");
+    let c = +prompt("he so tu do la")
+    let delta = (b * b) - (a * c * 4)
+    let d = Math.sqrt(delta)
+    let x1 = (-b + d) / (2 * a)
+    let x2 = (-b - d) / (2 * a)
+    if (a == 0) {
+        alert("day ko phai pt bac 2")
+    } else if (delta > 0) {
+        alert("pt co hai nghiem phan biet la: " + x1 + " va " + x2);
+    } else if (delta = 0) {
+        alert("pt co nghiem kep la x1=x2 " + (-b) / (2 * a))
+    } else {
+        alert("pt vo nghiem")
+    }
+</script>
+</body>
+</html>

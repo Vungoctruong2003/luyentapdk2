@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Luong thang cua ban la: ")
+    let b = a * (0.03);
+    let c = a * (0.06);
+    let d = a * (0.12);
+    let e = a * (0.17);
+    let f = a * (0.2);
+    if (a > 0 && a < 5000000) {
+        alert("thue ban phai nop la: " + b)
+    } else if (a >= 5000000 && a < 10000000) {
+        alert("thue ban phai nop la: " + c)
+    } else if (a >= 10000000 && a < 20000000) {
+        alert("thue ban phai nop la: " + d)
+    } else if (a >= 20000000 && a < 50000000) {
+        alert("thue ban phai nop la: " + e)
+    } else if (a >= 50000000 && a < 100000000) {
+        alert("thue ban phai nop la: " + f)
+    }
+
+</script>
+
+</body>
+</html>
